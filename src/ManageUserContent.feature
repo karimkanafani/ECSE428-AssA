@@ -9,7 +9,7 @@ Feature: Manage user generated content
     And the admin is in the correct workspace
 
     # Normal Flow
-  Scenario Outline: The administrative finds inappropriate content in a channel
+  Scenario Outline: The administrative user finds inappropriate content in a channel
     Given the admin found inappropriate content in a channel
     When the admin clicks on it
     And selects deleted content

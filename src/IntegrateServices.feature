@@ -9,7 +9,7 @@ Feature: Integrate third party services
     And the admin is in the correct workspace
 
     # Normal Flow
-  Scenario Outline: The administrative successfully integrated a third party service
+  Scenario Outline: The administrative user successfully integrated a third party service
     Given the admin is on the integration page
     When the admin initiates the integration of a third party service
     And provides the necessary information <description> <name> and API credentials <key> for integration
