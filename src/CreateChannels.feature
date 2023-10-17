@@ -2,7 +2,7 @@ Feature: Create a new channel
 
   As an administrative user,
   I want to be able to create channels,
-  so that students can organize their communications.
+  so that users can organize their communications.
 
   Background:
     Given the admin is logged in using their administrative account
