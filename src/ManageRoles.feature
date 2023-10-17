@@ -7,6 +7,12 @@ Feature: Manage account roles and permissions
   Background:
     Given the admin is logged in using their administrative account
     And the admin is in the correct workspace
+    And the following roles exist:
+      | role          |
+      | Student       |
+      | TA            |
+      | Prof          |
+      | Group #number |
 
     # Normal Flow
   Scenario Outline: The administrative user assigns a role to a user
