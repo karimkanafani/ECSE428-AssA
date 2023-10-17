@@ -21,16 +21,17 @@ Feature: Create a new channel
       | Office Hours |
 
       # Alternate Flow
-  Scenario Outline: The administrative user creates a new channel with a valid name
-    Given the admin uses the keyboard shortcut "CMD + N" or "CTRL + N" to create a channel
+  Scenario Outline: The administrative user creates a new channel with a valid name and sets access restrictions
+    Given the admin initiated the channel creation process
     When the admin gives the new channel a non-conflicting name <name>
+    And sets the specified access restrictions <restriction>
     Then the new channel will be created successfully
     Examples:
-      | name         |
-      | General Chat |
-      | Assignments  |
-      | Project      |
-      | Office Hours |
+      | name         | restriction |
+      | General Chat | Everyone    |
+      | Assignments  | Everyone    |
+      | TA Chat      | TA          |
+      | Grading hub  | Staff       |
 
         # Error Flow
   Scenario Outline: The administrative user creates a new channel with an invalid name
