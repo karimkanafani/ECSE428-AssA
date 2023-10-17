@@ -9,7 +9,7 @@ Feature: Manage account roles and permissions
     And the admin is in the correct workspace
 
     # Normal Flow
-  Scenario Outline: The administrative user assigns a user a role
+  Scenario Outline: The administrative user assigns a role to a user
     Given the admin selects a user
     When the admin gives user a role <role>
     Then the user will now have access to the <channels> visible to <role>
@@ -20,7 +20,7 @@ Feature: Manage account roles and permissions
       | Prof    | Announcements                                    |
 
      # Alternate Flow: example of student that changes groups
-  Scenario Outline: The administrative user removes a user a role
+  Scenario Outline: The administrative user removes a role from a user
     Given the admin selects the user whose role needs to be removed
     When the admin gives removes the role <role>
     Then the user will now lose access to the <channels> visible to <role>

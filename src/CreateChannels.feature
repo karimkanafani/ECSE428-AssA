@@ -38,9 +38,10 @@ Feature: Create a new channel
     Given the admin selects "New channel"
     When the admin gives the new channel an invalid name <name>
     Then the new channel will not be created
+    And the error <error> will be displayed to the admin
     Examples:
-      | name |
-      | .    |
-      |      |
-      | _    |
-      | ,    |
+      | name | error                        |
+      | .    | Invalid name for the channel |
+      |      | Channel name cannot be empty |
+      | _    | Invalid name for the channel |
+      | ,    | Invalid name for the channel |
