@@ -19,7 +19,7 @@ Feature: Manage user generated content
       | This file has been removed by the admin for breaching policy    |
       | This message has been removed by the admin for breaching policy |
 
-     # Alternate Flow: example of student that changes groups
+     # Alternate Flow
   Scenario Outline: The administrative user finds inappropriate content in a channel and silences the user responsible
     Given the admin found inappropriate content in a channel
     And found the user responsible for the content

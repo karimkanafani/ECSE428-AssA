@@ -19,7 +19,7 @@ Feature: Manage user generated content
       | message                                                                   |
       | You have been removed from the workspace for breaching academic integrity |
 
-     # Alternate Flow: example of student that changes groups
+     # Alternate Flow
   Scenario Outline: The administrative user finds a disruptive user in a channel and bans them
     Given the admin found a disruptive user in a channel
     When the admin clicks on the user
